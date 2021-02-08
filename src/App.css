@@ -38,9 +38,36 @@
   }
 }
 
-.cc {
+.idcard {
   display: flex;
+  border: 2px black solid;
+  padding: 3px;
+  margin: 3px;
+  width: 35vw
+}
+
+.idinfo {
+  padding: 10px
+}
+
+.langs {
+  border: 2px black solid;
+  width: 15vw; 
   padding: 20px;
-  justify-content: center;
-  align-items: center;
+  margin: 5px;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.cc {
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+  width: 30vw;
+  height: 25vh
+}
+
+.threeCC {
+  display: flex;
+
 }

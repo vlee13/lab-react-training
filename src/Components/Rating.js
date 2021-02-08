@@ -1,21 +1,19 @@
 import React from 'react';
 
 const Rating = (props) => {
-  return (
-    <div>
+  function stars() {
+    let result = '';
+    for (let i = 0; i <= 5; i++) {
+      if (i < Math.round(Number(props.children))) {
+        result += '★';
+      } else {
+        result += '☆';
+      }
+    }
+    return result;
+  }
 
-      let result = ''
-          for(let i=0; i<=5; i++) {
-            if(i<Math.round(Number(props.children))) {
-                result += '★'
-            } else {
-                result += '☆'
-            }
-          }
-          <p>{result}</p>
-          
-    </div>
-  );
+  return <div>{stars}</div>;
 };
 
 export default Rating;

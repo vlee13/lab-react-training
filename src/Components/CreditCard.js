@@ -2,16 +2,16 @@ import React from 'react';
 
 const CreditCard = (props) => {
   return (
-    <div className="cc">
-      <p>Type: {props.type}</p>
+    <div
+      className="cc"
+      style={{ backgroundColor: props.bgColor, color: props.color }}
+    >
+      <p>{props.type}</p>
       <p>Number: {props.number}</p>
       <p>
-        Expires on: {props.expMonth}, {props.expYear}
+        Expires on: {props.expirationMonth}/{props.expirationYear} {props.bank}
       </p>
-      <p>Bank: {props.bank}</p>
       <p>Owner: {props.owner}</p>
-      <p>BG Color: {props.bgColor}</p>
-      <p>Color: {props.color}</p>
     </div>
   );
 };
