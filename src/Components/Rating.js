@@ -13,7 +13,7 @@ const Rating = (props) => {
     return result;
   }
 
-  return <div>{stars}</div>;
+  return <div>{stars()}</div>;
 };
 
 export default Rating;

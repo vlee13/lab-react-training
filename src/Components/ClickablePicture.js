@@ -9,6 +9,7 @@ const ClickablePicture = (props) => {
       <img
         src={pic ? props.img : props.imgClicked}
         onClick={() => setPic(!pic)}
+        alt="togglePic"
       />
     </div>
   );

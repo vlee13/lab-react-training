@@ -69,5 +69,25 @@
 
 .threeCC {
   display: flex;
+}
 
+.driverCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  width: 60vw;
+  height: 25vh;
+  padding: 15px;
+  margin: 8px;
+  background-color: #2867B2;
+  color: white;
+  border-radius: 10px;
+}
+
+.driverCard img {
+  width: 15vw;
+  height: 25vh;
+  border-radius: 50%;
+  margin: 10px;
 }
